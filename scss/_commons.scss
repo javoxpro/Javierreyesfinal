@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+form,
+form::placeholder,
+textarea {
+    font-family: $fuentePrincipal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $textSemi;
+    text-transform: $transformUpp;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $colorFondo;
+    width: auto;
+    height: auto;
+}
+
+.intro {
+    font-size: $parrafoSize;
+    align-items: center;
+    @media (min-width: 1024px) {
+        .intro {
+            font-size: $fontSmall;
+        }
+    }
+}
+
+.migajas {
+    padding-left: 50px;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        float: left;
+        padding-right: 0.5rem;
+        color: $colorFondo;
+        content: var(--bs-breadcrumb-divider, "/");
+    }
+    .breadcrumb-item.active {
+        color: $colorTextos;
+    }
+
+    a {
+        color: $colorFondo;
+        text-decoration: none;
+    }
+}
+
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-width: 0px;
+    overflow-wrap: break-word;
+    background-color: $colorFondo;
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    justify-content: center;
+    img {
+        width: 200px;
+    }
+}
+.card-img,
+.card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+    width: 100%;
+}
+
+.bloquetexto {
+    font-size: $parrafoSizeMd;
+}
+.nosotrosimg {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.fign {
+    margin: 10px;
+    padding: 40px;
+}
+
+.sneakers {
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 0;
+    color: $colorNaranja;
+    font-size: $parrafoSizeMd;
+}
+
+#tabs .accordion-button:first-child {
+    background-color: $colorNaranja;
+    color: $colorFondo;
+}
+
+.form-label {
+    color: rgba(235, 144, 18, 1)
+}
