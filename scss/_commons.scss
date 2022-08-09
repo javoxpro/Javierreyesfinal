@@ -140,3 +140,13 @@ svg {
 .form-label {
     color: rgba(235, 144, 18, 1)
 }
+
+.formulario form {
+    width: 50%;
+}
+
+@media (min-width: 1200px) {
+    .formulario form {
+        width: 600px;
+        }
+    }
